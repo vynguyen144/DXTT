@@ -1,22 +1,23 @@
-# Lumen Studio — Photo Editor
+# Lumen Studio — Trình chỉnh sửa ảnh
 
-A browser-based photo editor prototype focused on non-destructive local adjustments.
+Ứng dụng chỉnh sửa ảnh chạy trực tiếp trên trình duyệt, tập trung vào việc điều chỉnh ánh sáng và màu sắc theo từng vùng mà không làm thay đổi ảnh gốc trong bộ nhớ.
 
-## Current features
-- Import images from your device or drag-and-drop into the workspace.
-- Work locally in the browser; the source file is not overwritten or uploaded to a server.
-- Separate adjustment layers with independent visibility, opacity, ordering, and masks.
-- Brush masks, eraser, linear gradient, radial gradient, rectangular masks, mask inversion, full-mask fill/clear, and mask overlay preview.
-- Non-destructive mask feathering: feather is applied to a temporary mask during rendering, so changing feather does not permanently blur or damage the original mask.
-- Local exposure, brightness, contrast, highlights, shadows, whites, blacks, temperature, tint, saturation, vibrance, clarity, and mask-aware sharpening controls.
-- Basic automatic exposure suggestion for the selected layer.
-- Before/after toggle and PNG export.
+## Chức năng hiện có
+- Mở ảnh từ thiết bị hoặc kéo thả ảnh vào vùng làm việc.
+- Xử lý ngay trên trình duyệt; ảnh gốc không bị ghi đè và không được tải lên máy chủ.
+- Nhiều lớp chỉnh sửa riêng biệt: bật/tắt, chỉnh độ mờ, đổi thứ tự, sao chép và xóa.
+- Công cụ cọ tô, tẩy vùng chọn, dải chuyển sắc, chuyển sắc tròn, vùng chữ nhật, đảo vùng chọn và xem lớp phủ vùng tác động.
+- Điều chỉnh theo vùng: phơi sáng, độ sáng, độ tương phản, vùng sáng, vùng tối, điểm trắng, điểm đen, nhiệt độ màu, sắc độ, độ bão hòa, độ rực màu, độ trong và độ sắc nét.
+- Làm mềm rìa vùng chọn không phá hủy vùng chọn gốc.
+- Tô đầy vùng chọn để áp dụng hiệu ứng lên toàn ảnh, hoặc xóa vùng chọn mà vẫn giữ nguyên thông số.
+- Gợi ý cân sáng tự động cơ bản, so sánh trước/sau và xuất ảnh PNG.
 
-## Run
-Open `index.html` in a modern browser, or use GitHub Pages after merging/deploying this branch.
+## Cách chạy
+Mở tệp `index.html` bằng trình duyệt hiện đại. Có thể triển khai bằng GitHub Pages sau khi nhánh này được đưa vào nhánh triển khai.
 
-## Notes
-- This is an early MVP. The current auto adjustment uses local image statistics; it is not AI subject recognition.
-- The editor downsizes very large images to a maximum working dimension of 2600 px to keep browser memory use manageable.
-- Supported input depends on the browser's image decoder. PNG export is currently provided.
-- Local adjustments are non-destructive in the sense that the original image pixels are retained in memory and each layer stores its own settings and mask. This initial version does not yet save editable project files between sessions. Browser runtime testing is still needed across different browsers and image sizes.
+## Lưu ý
+- Đây vẫn là phiên bản đầu tiên; tính năng tự động cân sáng dựa trên thống kê độ sáng của ảnh, chưa dùng AI để nhận diện chủ thể.
+- Ảnh quá lớn được thu nhỏ để cạnh dài tối đa 2600 px nhằm hạn chế mức sử dụng bộ nhớ trình duyệt.
+- Định dạng xuất hiện có là PNG.
+- Ảnh gốc và các lớp chỉnh sửa hiện chỉ được giữ trong phiên làm việc; chưa có chức năng lưu dự án để mở lại ở phiên sau.
+- Cú pháp JavaScript đã được kiểm tra, nhưng cần tiếp tục kiểm thử thao tác thực tế trên nhiều trình duyệt và kích thước ảnh.
