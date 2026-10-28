@@ -3,6 +3,7 @@
 Ứng dụng chỉnh sửa ảnh chạy trực tiếp trên trình duyệt, tập trung vào việc điều chỉnh ánh sáng và màu sắc theo từng vùng mà không làm thay đổi ảnh gốc trong bộ nhớ.
 
 ## Chức năng hiện có
+- Hiển thị vòng tròn xem trước kích thước Brush/Eraser khi di chuyển chuột trên ảnh; viền đen-trắng tương phản giúp dễ nhìn trên cả vùng sáng và tối.
 - Trên màn hình cảm ứng, hỗ trợ chụm hai ngón để phóng to/thu nhỏ và xoay hai ngón để xoay góc nhìn ảnh; có nút đặt lại góc nhìn.
 - Giao diện responsive cho điện thoại, iPad/tablet và máy tính; trên màn hình nhỏ có thanh điều hướng nhanh ở cạnh dưới.
 - Khi xuất ảnh trên thiết bị di động được hỗ trợ, ứng dụng ưu tiên mở bảng chia sẻ hệ thống để người dùng chọn lưu vào thư viện Ảnh/Photos; nếu không hỗ trợ sẽ tải PNG xuống.
