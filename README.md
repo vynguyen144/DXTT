@@ -3,6 +3,8 @@
 Ứng dụng chỉnh sửa ảnh chạy trực tiếp trên trình duyệt, tập trung vào việc điều chỉnh ánh sáng và màu sắc theo từng vùng mà không làm thay đổi ảnh gốc trong bộ nhớ.
 
 ## Chức năng hiện có
+- Giao diện responsive cho điện thoại, iPad/tablet và máy tính; trên màn hình nhỏ có thanh điều hướng nhanh ở cạnh dưới.
+- Khi xuất ảnh trên thiết bị di động được hỗ trợ, ứng dụng ưu tiên mở bảng chia sẻ hệ thống để người dùng chọn lưu vào thư viện Ảnh/Photos; nếu không hỗ trợ sẽ tải PNG xuống.
 - Chế độ scan tài liệu nhanh: tăng tương phản/làm sáng nền theo kiểu đen trắng hoặc tăng độ rõ và cân sáng khi giữ màu; áp dụng không phá hủy bằng một lớp chỉnh sửa riêng.
 - Lưu dự án thành tệp `.lumen` và mở lại dự án trên thiết bị khác; tệp bao gồm ảnh nguồn, các lớp chỉnh sửa và mask.
 - Tự lưu phiên chỉnh sửa trong bộ nhớ IndexedDB của trình duyệt; tự khôi phục ảnh gốc, các lớp, thông số và vùng chọn khi tải lại trang (F5) trên cùng trình duyệt/thiết bị. Dữ liệu phiên không được tải lên máy chủ; hãy xuất PNG để sao lưu riêng.
