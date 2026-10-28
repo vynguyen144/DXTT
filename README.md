@@ -3,6 +3,7 @@
 Ứng dụng chỉnh sửa ảnh chạy trực tiếp trên trình duyệt, tập trung vào việc điều chỉnh ánh sáng và màu sắc theo từng vùng mà không làm thay đổi ảnh gốc trong bộ nhớ.
 
 ## Chức năng hiện có
+- Tự lưu phiên chỉnh sửa trong bộ nhớ IndexedDB của trình duyệt; tự khôi phục ảnh gốc, các lớp, thông số và vùng chọn khi tải lại trang (F5) trên cùng trình duyệt/thiết bị. Dữ liệu phiên không được tải lên máy chủ; hãy xuất PNG để sao lưu riêng.
 - Mở ảnh từ thiết bị hoặc kéo thả ảnh vào vùng làm việc.
 - Xử lý ngay trên trình duyệt; ảnh gốc không bị ghi đè và không được tải lên máy chủ.
 - Nhiều lớp chỉnh sửa riêng biệt: bật/tắt, chỉnh độ mờ, đổi thứ tự, sao chép và xóa.
