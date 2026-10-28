@@ -9,6 +9,8 @@
 - Công cụ cọ tô, tẩy vùng chọn, dải chuyển sắc, chuyển sắc tròn, vùng chữ nhật, đảo vùng chọn và xem lớp phủ vùng tác động.
 - Điều chỉnh theo vùng: phơi sáng, độ sáng, độ tương phản, vùng sáng, vùng tối, điểm trắng, điểm đen, nhiệt độ màu, sắc độ, độ bão hòa, độ rực màu, độ trong và độ sắc nét.
 - Làm mềm rìa vùng chọn không phá hủy vùng chọn gốc.
+- Hoàn tác / làm lại bằng nút trên thanh công cụ hoặc phím tắt `Ctrl+Z`, `Ctrl+Y` (có giới hạn lịch sử để giảm sử dụng bộ nhớ).
+- Khi vẽ lại dải chuyển sắc hoặc vùng chữ nhật, vùng chọn của lớp hiện tại được thay thế để tránh cộng dồn ngoài ý muốn.
 - Tô đầy vùng chọn để áp dụng hiệu ứng lên toàn ảnh, hoặc xóa vùng chọn mà vẫn giữ nguyên thông số.
 - Gợi ý cân sáng tự động cơ bản, so sánh trước/sau và xuất ảnh PNG.
 
@@ -21,3 +23,4 @@ Mở tệp `index.html` bằng trình duyệt hiện đại. Có thể triển k
 - Định dạng xuất hiện có là PNG.
 - Ảnh gốc và các lớp chỉnh sửa hiện chỉ được giữ trong phiên làm việc; chưa có chức năng lưu dự án để mở lại ở phiên sau.
 - Cú pháp JavaScript đã được kiểm tra, nhưng cần tiếp tục kiểm thử thao tác thực tế trên nhiều trình duyệt và kích thước ảnh.
+- Hoàn tác/làm lại lưu tối đa 4 trạng thái gần nhất; với ảnh lớn, lịch sử có thể sử dụng thêm bộ nhớ.
